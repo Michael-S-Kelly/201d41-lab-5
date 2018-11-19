@@ -76,7 +76,7 @@ function sumArray(sumArr) { //eslint-disable-line
   var sumofArray = 0;
   //console.log('after function');
   for(var counter = 0; counter < sumArr.length; counter++) {
-    sumofArray = sumofArray + sumArr[counter];
+    sumofArray = sum(sumofArray, sumArr[counter])[0];
   }
   //console.log(sumofArray);
   //console.log(sumArr[0], sumArr[1], sumArr[2]);
@@ -106,7 +106,7 @@ function multiplyArray(multArr) { //eslint-disable-line
   var prodofArray = 1;
   //console.log('after function');
   for(var counter = 0; counter < multArr.length; counter++) {
-    prodofArray = prodofArray * multArr[counter];
+    prodofArray = multiply(prodofArray, multArr[counter])[0];
   }
   return [prodofArray , 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + prodofArray + '.'];
 
